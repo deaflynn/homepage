@@ -1,0 +1,32 @@
+body {
+	background: black;
+	color: white;
+    margin: 20px
+}
+
+p, ul, ol {
+	background: black;
+	color: white;
+	border: 3px solid gray;
+	padding: 2px;
+}
+
+p:hover, ul:hover, ol:hover{
+    background: blue;
+    border: 6px double orange
+}
+
+#banner{
+    text-align: center
+}
+
+a {
+	color: yellow;
+    text-decoration-style: dotted;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration:underline;
+    text-decoration-style: solid;
+}
