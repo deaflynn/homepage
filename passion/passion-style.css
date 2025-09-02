@@ -1,16 +1,19 @@
 body{
+  background-color: black;
   background-image: url(assets/grid\ background.jpg);
-  /*margin: 2em 15em;*/
+  margin: auto;
+  width: 70%
 }
 
 .banner{
     text-align: center;
-    background-image: linear-gradient(rgb(23, 117, 217), rgb(10, 71, 176));
+    background-image: linear-gradient(rgb(18, 156, 220), rgb(9, 96, 177));
     border-radius: 10px;
     padding: 5px 10px;
     font-family: "body-font", monospace;
     color: rgb(194, 213, 244);
     border: double rgb(172, 2, 172) 5px;
+    margin-top: 1em;
 }
 
 .banner h1{
@@ -19,7 +22,7 @@ body{
 }
 
 .banner a{
-  color: rgb(255, 111, 207);
+  color: rgb(255, 186, 232);
 }
 
 .banner a:hover{
@@ -27,13 +30,18 @@ body{
   font-style: italic;
 }
 
+.block hr{
+  border-top: 2px dashed rgb(186, 3, 107);
+  border-bottom: none;
+}
+
 .block{
   font-family: "body-font", monospace;
   background-color: rgb(22, 22, 22);
-  padding: 5px 10px;
-  margin: 10px;
+  padding: 5px 3em;
+  margin: 15px;
   border-radius: 8px;
-  border: solid, rgb(74, 74, 74), 2px;
+  border: solid, rgb(74, 74, 74), 5px;
   color: rgb(246, 177, 226);
 }
 
@@ -43,23 +51,51 @@ body{
 
 .block a{
   color: rgb(255, 211, 251);
+  text-decoration-thickness: 1px;
 }
 
 .block a:hover{
-  color: rgb(19, 136, 209);
+  color: rgb(39, 166, 246);
   font-style: italic;
 }
 
 .block p, h2, h3, details{
   text-align: center;
+  margin: 9px;
 }
 
-.block h2, h3, b{
+.block h2, h3{
   color: rgb(254, 77, 189);
+}
+
+.block h2{
+  text-decoration: underline;
+  text-decoration-style:dotted
 }
 
 .highlight{
   color: rgb(166, 208, 255);
+  background-color: rgb(20, 38, 95);
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.icon-section b{
+  background-color: rgb(37, 36, 36);
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: rgb(250, 60, 184)
+}
+
+.icon{
+  border-radius: 5px;
+  height: 100px;
+}
+
+.picture{
+  width: 95%;
+  border-radius: 5px;
+  border: solid rgb(118, 118, 118) 2px;
 }
 
 @font-face {
