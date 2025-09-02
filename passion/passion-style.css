@@ -42,7 +42,7 @@ body{
 }
 
 .block a{
-  color: white;
+  color: rgb(255, 211, 251);
 }
 
 .block a:hover{
@@ -52,6 +52,14 @@ body{
 
 .block p, h2, h3, details{
   text-align: center;
+}
+
+.block h2, h3, b{
+  color: rgb(254, 77, 189);
+}
+
+.highlight{
+  color: rgb(166, 208, 255);
 }
 
 @font-face {
