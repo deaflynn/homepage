@@ -5,23 +5,35 @@ body{
 
 .banner{
     text-align: center;
-    background-color: rgb(10, 82, 141);
+    background-image: linear-gradient(rgb(23, 117, 217), rgb(10, 71, 176));
     border-radius: 10px;
     padding: 5px 10px;
     font-family: "body-font", monospace;
-    color: lightblue
+    color: rgb(194, 213, 244);
+    border: double rgb(172, 2, 172) 5px;
 }
 
 .banner h1{
-  font-family: "header-font", 'courier new', monospace
+  font-family: "header-font", 'courier new', monospace;
+  color:lightblue
+}
+
+.banner a{
+  color: rgb(255, 111, 207);
+}
+
+.banner a:hover{
+  color: white;
+  font-style: italic;
 }
 
 .block{
   font-family: "body-font", monospace;
-  background-color: rgb(114, 24, 88);
+  background-color: rgb(22, 22, 22);
   padding: 5px 10px;
   margin: 10px;
   border-radius: 8px;
+  border: solid, rgb(74, 74, 74), 2px;
   color: rgb(246, 177, 226);
 }
 
@@ -31,6 +43,11 @@ body{
 
 .block a{
   color: white;
+}
+
+.block a:hover{
+  color: rgb(19, 136, 209);
+  font-style: italic;
 }
 
 .block p, h2, h3, details{
