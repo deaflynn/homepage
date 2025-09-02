@@ -5,10 +5,11 @@ body{
 
 .banner{
     text-align: center;
-    background-color: rgb(50, 148, 218);
+    background-color: rgb(10, 82, 141);
     border-radius: 10px;
     padding: 5px 10px;
     font-family: "body-font", monospace;
+    color: lightblue
 }
 
 .banner h1{
@@ -17,14 +18,19 @@ body{
 
 .block{
   font-family: "body-font", monospace;
-  background-color: rgb(241, 130, 210);
+  background-color: rgb(114, 24, 88);
   padding: 5px 10px;
   margin: 10px;
   border-radius: 8px;
+  color: rgb(246, 177, 226);
 }
 
 .block li{
   margin: 15px 10px 0px 0px;
+}
+
+.block a{
+  color: white;
 }
 
 .block p, h2, h3, details{
