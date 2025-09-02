@@ -1,0 +1,42 @@
+body{
+  background-image: url(assets/grid\ background.jpg);
+  /*margin: 2em 15em;*/
+}
+
+.banner{
+    text-align: center;
+    background-color: rgb(50, 148, 218);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "body-font", monospace;
+}
+
+.banner h1{
+  font-family: "header-font", 'courier new', monospace
+}
+
+.block{
+  font-family: "body-font", monospace;
+  background-color: rgb(241, 130, 210);
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.block li{
+  margin: 15px 10px 0px 0px;
+}
+
+.block p, h2, h3, details{
+  text-align: center;
+}
+
+@font-face {
+  font-family: "body-font";
+  src: url("assets/ari-w9500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "header-font";
+  src: url("assets/ari-w9500-display.ttf") format("truetype");
+}
