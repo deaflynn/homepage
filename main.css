@@ -1,0 +1,56 @@
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "header-font";
+  src: url("https://files.catbox.moe/gsfrz7.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "body-font";
+  src: url("https://files.catbox.moe/udfjj8.ttf") format("truetype");
+}
+
+body{
+    background-color: rgb(43, 3, 63);
+    text-align: center
+}
+
+h1{
+    color: orange;
+    background-image: linear-gradient(rgb(64, 7, 95), purple);
+    border: rgb(168, 4, 168) double 5px;
+    text-align: center;
+    font-family: "header-font";
+    width: 70%;
+    margin: auto;
+    border-radius: 3px;
+}
+
+p{
+    font-family: "body-font", sans-serif, monospace;
+    color: rgb(235, 182, 235);
+}
+
+.page-button{
+    margin: 25px;
+    font-family: "body-font", sans-serif;
+}
+
+.page-button a{
+    color: rgb(248, 86, 248);
+    text-decoration: none;
+    background-color: rgb(93, 2, 103);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.page-button a:hover{
+    color: rgb(253, 181, 48);
+    border: rgb(179, 5, 179) 2px solid
+}
