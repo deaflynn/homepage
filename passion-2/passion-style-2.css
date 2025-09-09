@@ -1,0 +1,139 @@
+body{
+  background-color: black;
+  background-image: url(assets/grid\ background.jpg);
+  width: 85%;
+  background-repeat: repeat;
+  margin: auto;
+}
+
+/* CSS GRID FUNNY MOMENTS nvm i forgot*/
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-auto-flow: row;
+}
+
+.mixing{
+  grid-area: mixing;
+}
+
+.resources{
+  grid-area: resources;
+}
+
+/* why isnt the border showing my page kinda falls apart without it.......... */
+
+.block{
+  font-family: "body-font", monospace;
+  background-color: rgb(237, 229, 245);
+  padding: 5px;
+  margin: 10px 0px;
+  border: outset, rgb(132, 132, 132), 5px;
+  color: rgb(57, 36, 64);
+}
+
+.banner{
+    text-align: center;
+    background-color: rgb(184, 178, 178);
+    padding: 10px;
+    font-family: "body-font", monospace;
+    color: rgb(40, 11, 52);
+    border: outset rgb(197, 197, 197) 5px;
+    margin-top: 1em;
+}
+
+.banner h1{
+  font-family: "header-font", 'courier new', monospace;
+  color:rgb(113, 13, 189);
+  font-style: italic;
+}
+
+.banner a{
+  color: rgb(147, 27, 191);
+  text-decoration: none;
+}
+
+.banner a:hover{
+  color: rgb(243, 217, 252);
+  background-color: rgb(146, 16, 190);
+  padding: 2px;
+}
+
+.block hr{
+  border-top: 2px solid rgb(17, 97, 194);
+  border-bottom: none;
+}
+
+.block li{
+  margin: 10px 5px 0px 0px;
+}
+
+.block a{
+  color: rgb(147, 27, 191);
+  text-decoration: none;
+}
+
+.block a:hover{
+  color: rgb(243, 217, 252);
+  background-color: rgb(146, 16, 190);
+  padding: 2px;
+}
+
+.block p, h2, h3, details{
+  margin: 9px;
+}
+
+.block h2, h3, b{
+  font-family: "header-font", monospace;
+}
+
+.block h2{
+  color: rgb(162, 7, 205);
+}
+
+.block h3{
+  color: rgb(250, 34, 229)
+}
+
+.block h2{
+  text-decoration: underline;
+  text-decoration-style:double;
+  text-decoration-thickness: 1.5px;
+}
+
+.highlight{
+  color: rgb(46, 39, 72);
+  background-color: rgb(55, 188, 255);
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.icon-section b{
+  background-color: rgb(198, 191, 202);
+  color: rgb(197, 0, 141);
+  padding: 5px 5px;
+  border: inset rgb(186, 186, 186) 2px;
+}
+
+.icon{
+  height: 150px;
+  border: rgb(157, 142, 166) outset 3px;
+}
+
+.picture{
+  width: 95%;
+  border-radius: 5px;
+  border: solid rgb(118, 118, 118) 2px;
+}
+
+@font-face {
+  font-family: "body-font";
+  src: url("assets/Pixellari.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "header-font";
+  src: url("assets/ari-w9500.ttf") format("truetype");
+}
