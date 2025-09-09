@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(220, 201, 254);
+}
+
+img{
+    max-width: 100%;
+}
+
+.block{
+    background-color:rgb(203, 176, 248);
+    margin: 10px;
+    padding: 10px;
+}
+
+/*inline elements with margin and padding don't function like they do with block elements*/
+.inline{
+    background-color:rgb(193, 166, 251);
+    margin: 10px;
+    padding: 10px;
+
+    /* inline elements can't be given width and height */
+    width: 100px;
+    height: 100px;
+}
+
+/* a handy and useful display property for many elements, like making flexible grids that can adapt to screen sizes without relying on complex structural systems. simple and easy way to start adding adaptability */
+.inline-block{
+    background-color: rgb(169, 139, 238);
+    display:inline-block;
+    margin: 10px;
+    padding: 10px;
+
+    /* unlike inline, inline-block can be given width and height */
+    width: 100px;
+    height: 100px;
+}
+
+.content-box{
+    background-color: rgb(146, 129, 241);
+    padding: 60px;
+    border: 5px solid rgb(105, 64, 226);
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.border-box{
+    background-color: rgb(146, 129, 241);
+    padding: 60px;
+    border: 5px solid rgb(105, 64, 226);
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    /* border box includes the padding and border sizes in the total width and height of the element */
+    box-sizing:border-box;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(110, 92, 211);
+    margin: 10px;
+    /* elements are in static position by default, where are unaffected by top/bottom/left/right properties */
+}
+
+.relative{
+    background-color: rgb(89, 71, 196);
+    position:relative;
+    top: 20px;
+    left: 20px;
+}
+
+.fixed{
+    background: rgb(84, 55, 212);
+    position: fixed;
+    /* if no positions are given to fixed elements, it will disappear */
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+.sticky{
+    background:rgb(100, 68, 244);
+    position:sticky;
+    bottom: 0px;
+    margin: 0px;
+}
+
+.absolute{
+    background: rgb(67, 24, 196);
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+.smiley{
+    background-color: rgb(241, 173, 48);
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+    position: relative;
+}
+
+.eye{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(97, 53, 53);
+    /* in order for this element to be positioned relative to its container, the container also needs to have a position value of its own, at it can't be static */
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+}
