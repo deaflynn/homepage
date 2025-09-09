@@ -123,6 +123,8 @@ body{
   margin: 0px 10px;
 }
 
+/* the float property is such a wicked little viper, hope the icon sizes are good enough to not be weird on other screens */
+
 .picture{
   width: 95%;
   border: solid rgb(71, 17, 93) 2px;
