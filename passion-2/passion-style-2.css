@@ -23,14 +23,12 @@ body{
   grid-area: resources;
 }
 
-/* why isnt the border showing my page kinda falls apart without it.......... */
-
 .block{
   font-family: "body-font", monospace;
   background-color: rgb(237, 229, 245);
   padding: 5px;
   margin: 10px 0px;
-  border: outset, rgb(132, 132, 132), 5px;
+  border: outset rgb(132, 132, 132) 5px;
   color: rgb(57, 36, 64);
 }
 
@@ -115,17 +113,19 @@ body{
   color: rgb(197, 0, 141);
   padding: 5px 5px;
   border: inset rgb(186, 186, 186) 2px;
+  display: flex;
 }
 
 .icon{
-  height: 150px;
+  height: 130px;
   border: rgb(157, 142, 166) outset 3px;
+  float: left;
+  margin: 0px 10px;
 }
 
 .picture{
   width: 95%;
-  border-radius: 5px;
-  border: solid rgb(118, 118, 118) 2px;
+  border: solid rgb(71, 17, 93) 2px;
 }
 
 @font-face {

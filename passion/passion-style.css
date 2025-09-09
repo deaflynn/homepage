@@ -41,7 +41,7 @@ body{
   padding: 5px 3em;
   margin: 15px;
   border-radius: 8px;
-  border: solid, rgb(74, 74, 74), 5px;
+  border: solid rgb(74, 74, 74) 5px;
   color: rgb(246, 177, 226);
 }
 
