@@ -25,7 +25,7 @@ body{
 
 .block{
   font-family: "body-font", monospace;
-  background-color: rgb(237, 229, 245);
+  background-color: rgb(221, 219, 223);
   padding: 5px;
   margin: 10px 0px;
   border: outset rgb(132, 132, 132) 5px;
