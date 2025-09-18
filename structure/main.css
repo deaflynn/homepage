@@ -1,7 +1,125 @@
-img{
-    max-width: 100%;
+img {
+	max-width: 100%;
 }
 
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
+	/* border: 1px solid red */
+}
+
+body {
+	background-image: url(https://file.garden/ZpLcdh6W1EDmvJ3N/the%20website/space%20bg%202.png);
+	width: 70%;
+	margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.banner {
+	text-align: center;
+	font-size: 55px;
+	color: gold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	text-shadow: 0px 5px rgb(156, 8, 185);
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.button button,
+a {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 20px;
+	background-color: rgb(56, 3, 92);
+	padding: 10px;
+	border-radius: 15px;
+	color: rgb(173, 107, 243);
+	border: rgb(115, 27, 160) 2px solid;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.button a:hover {
+	background-image: linear-gradient(rgb(60, 4, 99), rgb(175, 15, 165));
+	color: orange;
+	font-weight: bold;
+}
+
+.button button:hover {
+	background-image: linear-gradient(rgb(60, 4, 99), rgb(175, 15, 165));
+	color: orange;
+	font-weight: bold;
+}
+
+.ball img:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: shake 0.5s;
+
+	/* When the animation is finished, start again */
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+/*both pages share a stylesheet*/
+
+.box{
+    background-image: radial-gradient(#9b10b1, rgb(9, 9, 43), rgb(14, 3, 23));
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.message {
+	color: rgb(234, 176, 241);
+    text-align: center;
+    font-style: italic;
+}
+
+.text p{
+    color: rgb(206, 108, 255);
+    text-align: center;
+    font-size: 25px
 }
