@@ -7,6 +7,11 @@ img {
 	/* border: 1px solid red */
 }
 
+@font-face {
+  font-family: "strangedreams";
+  src: url("https://files.catbox.moe/8fjjl9.ttf") format("truetype");
+}
+
 body {
 	background-image: url(https://file.garden/ZpLcdh6W1EDmvJ3N/the%20website/space%20bg%202.png);
 	width: 70%;
@@ -18,9 +23,13 @@ body {
 	text-align: center;
 	font-size: 55px;
 	color: gold;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "strangedreams", Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	text-shadow: 0px 5px rgb(156, 8, 185);
+}
+
+p, a, button{
+	font-family: "strangedreams"
 }
 
 .button {
@@ -40,7 +49,7 @@ a {
 	color: rgb(173, 107, 243);
 	border: rgb(115, 27, 160) 2px solid;
 	text-decoration: none;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "strangedreams", Georgia, "Times New Roman", Times, serif;
 }
 
 .button a:hover {
