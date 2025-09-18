@@ -125,6 +125,8 @@ a {
 	color: rgb(234, 176, 241);
     text-align: center;
     font-style: italic;
+	text-shadow: rgb(209, 18, 209) 0px 2px;
+	font-size: 22px
 }
 
 .text p{
