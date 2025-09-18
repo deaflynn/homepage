@@ -1,0 +1,46 @@
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(248, 200, 207);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+main{
+    background-color: lightseagreen;
+    padding: 10px;
+    margin: 10px;
+}
+
+.class{
+    background-color: lightskyblue
+}
+
+/* id is the most specific identifier declaration */
+
+#id{
+    background-color: lightcyan
+}
+
+footer{
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* lower rules in the stylesheet are more specific */
+
+footer{
+    background-color: lightgoldenrodyellow
+}
