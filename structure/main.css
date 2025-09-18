@@ -16,7 +16,8 @@ body {
 	background-image: url(https://file.garden/ZpLcdh6W1EDmvJ3N/the%20website/space%20bg%202.png);
 	width: 70%;
 	margin: auto;
-    font-family: "strangedreams", Georgia, 'Times New Roman', Times, serif
+    font-family: "strangedreams", Georgia, 'Times New Roman', Times, serif;
+	padding: 30px;
 }
 
 .banner {
@@ -26,6 +27,16 @@ body {
 	font-family: "strangedreams", Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	text-shadow: 0px 5px rgb(156, 8, 185);
+}
+
+.ball{
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.ball img{
+	width: 300px;;
 }
 
 p, a, button{
