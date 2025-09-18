@@ -42,7 +42,7 @@ p, a, button{
 a {
 	text-align: center;
 	font-size: 30px;
-	margin: 10px 20px;
+	margin: 10px auto;
 	background-color: rgb(56, 3, 92);
 	padding: 10px;
 	border-radius: 15px;
@@ -50,6 +50,7 @@ a {
 	border: rgb(115, 27, 160) 2px solid;
 	text-decoration: none;
 	font-family: "strangedreams", Georgia, "Times New Roman", Times, serif;
+	max-width: 150px;
 }
 
 .button a:hover {
