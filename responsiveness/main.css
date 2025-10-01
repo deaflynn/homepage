@@ -1,0 +1,101 @@
+img {
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container{
+    max-width:1100px;
+    margin: 0 auto;
+}
+
+body {
+	background-color: rgb(68, 5, 95);
+	color: rgb(255, 214, 251);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 5px;
+}
+
+header,
+.left,
+.center,
+.right,
+footer, .mobile-banner {
+	border: dashed rgb(173, 12, 173) 2px;
+	padding: 10px;
+}
+
+header,
+footer {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.left, .right{
+    width: 25%;
+}
+
+.center{
+    width: 50%;
+}
+
+a {
+	color: rgb(244, 205, 122);
+}
+
+.mobile-banner{
+    display: none
+}
+
+/* max-width = desktop first */
+/* min-width = mobile first - most people browse sites on their phone, so it's ideal to design for mobile audiences first */
+
+/* tablet media query */
+
+@media screen and (max-width: 1000px) {
+
+    header{
+        padding: 0px;
+    }
+
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left{
+        width: 100%
+    }
+
+    .center, .right{
+        width: calc(50%-5px);
+    }
+}
+
+/* phone media query */
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+        display: none;
+    }
+    .left, .center, .right{
+        width: 100%;
+    }
+    header, footer{
+        display: none;
+    }
+    .mobile-banner{
+        text-align: center;
+        display:flex;
+    }
+}

@@ -1,0 +1,134 @@
+img{
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+}
+
+.square{
+    background-color:aquamarine;
+    width: 200px;
+    height: 200px;
+    /* animation-name: test;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: both; */
+
+    /* shorthand */
+    animation: test 4s 2s 1 alternate ease-in-out both;
+}
+
+@keyframes test{
+    0%{
+        background-color: blueviolet;
+        width: 200px;
+    }
+    100%{
+        background-color: magenta;
+        width: 400px
+    }
+}
+
+.container{
+    background-color: lightpink;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow:hidden
+}
+
+.circle{
+    background-color: bisque;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    
+    animation: pulse 2s infinite alternate ease-in-out;
+}
+
+.box{
+    background-color: bisque;
+    height: 10vw;
+    width: 10vw;
+    
+    animation: spin 2s infinite linear
+}
+
+.morph{
+    background-color: bisque;
+    height: 10vw;
+    width: 10vw;
+    transition: background 1s, border-radius 2s, rotate 1s
+}
+
+.morph:hover{
+    background-color: lightskyblue;
+    rotate: 180deg;
+    border-radius: 50%;
+}
+
+.rectangle{
+    background-color: bisque;
+    width: 150px;
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes pulse{
+    0%{
+        background-color: blanchedalmond;
+        transform: scale(1)
+
+    }
+    100%{
+        background-color: rgb(255, 214, 152);
+        transform: scale(1.5)
+        
+    }
+}
+
+@keyframes spin{
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes mover{
+    0%{
+        left: -150px;
+    }
+
+    45%{
+        rotate: 0deg;
+    }
+
+    50%{
+        rotate: 180deg;
+    }
+
+    100%{
+        left: 100vw;
+        rotate: 180deg;
+    }
+}
+
+@keyframes change{
+    0%{
+
+    }
+}
