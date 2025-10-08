@@ -1,0 +1,52 @@
+img {
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(77, 77, 135);
+	transition: all .3s ease-in
+}
+
+.dark{
+	background-color: rgb(44, 44, 88)
+}
+
+.menu {
+	background-color: cornflowerblue;
+	position: fixed;
+	top: 0;
+	right: -55vw;
+	padding: 20px;
+	width: 50vw;
+	text-align: center;
+	font-size: 150%;
+	height: 100vh;
+    transition: all .3s ease-out
+}
+
+.active {
+	right: 0px;
+}
+
+.gear{
+	height: 100px;
+	width: 100px;
+	background-color: cornflowerblue;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	transition: all .3s ease-out
+}
+
+.spin{
+	rotate: 180deg;
+}
+
+.glow{
+	background-color: antiquewhite;
+	box-shadow: 0px 0px 20px antiquewhite;
+}
