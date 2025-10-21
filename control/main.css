@@ -242,6 +242,10 @@ body.metal {
 	color: red;
 }
 
+.profile.metal a{
+	color: rgb(190, 7, 7);
+}
+
 .pfp.metal img {
 	box-shadow: 0px 0px 25px red;
 }
