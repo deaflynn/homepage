@@ -19,46 +19,50 @@ window.onclick = function (event) {
 };
 
 // changing theme
-$(".light").click(function () {
+$(".lightBtn").click(function () {
 	$(".container").removeClass("garden jazz metal");
 	$(".profile").removeClass("garden jazz metal");
-    $(".pfp").removeClass("garden jazz metal");
+	$(".pfp").removeClass("garden jazz metal");
 	$("body").removeClass("garden jazz metal");
 });
-$(".garden").click(function () {
+$(".gardenBtn").click(function () {
 	$(".container").toggleClass("garden");
 	$(".profile").toggleClass("garden");
-    $(".pfp").toggleClass("garden");
+	$(".pfp").toggleClass("garden");
 	$("body").toggleClass("garden");
 
 	$(".container").removeClass("jazz metal");
 	$(".profile").removeClass("jazz metal");
-    $(".pfp").removeClass("jazz metal");
+	$(".pfp").removeClass("jazz metal");
 	$("body").removeClass("jazz metal");
 });
-$(".jazz").click(function () {
+$(".jazzBtn").click(function () {
 	$(".container").toggleClass("jazz");
 	$(".profile").toggleClass("jazz");
-    $(".pfp").toggleClass("jazz");
+	$(".pfp").toggleClass("jazz");
 	$("body").toggleClass("jazz");
 
 	$(".container").removeClass("garden metal");
 	$(".profile").removeClass("garden metal");
-    $(".pfp").removeClass("garden metal");
+	$(".pfp").removeClass("garden metal");
 	$("body").removeClass("garden metal");
 });
-$(".metal").click(function () {
+$(".metalBtn").click(function () {
 	$(".container").toggleClass("metal");
 	$(".profile").toggleClass("metal");
-    $(".pfp").toggleClass("metal");
+	$(".pfp").toggleClass("metal");
 	$("body").toggleClass("metal");
 
 	$(".container").removeClass("garden jazz");
 	$(".profile").removeClass("garden jazz");
-    $(".profile").removeClass("garden jazz");
+	$(".profile").removeClass("garden jazz");
 	$("body").removeClass("garden jazz");
 });
 
-$(".dropdown-content").click(function (){
-$('.banner').hide();
-})
+$(function () {
+	$(".dropdown-content button").on("click", function () {
+		$(".dropdown-content button").removeClass("active"); // clear previous
+		$(this).addClass("active"); // highlight current
+		$(".banner").hide(); // keep your existing behavior
+	});
+});

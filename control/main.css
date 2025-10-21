@@ -1,217 +1,251 @@
-img{
-    max-width: 100%;
+img {
+	max-width: 100%;
 }
 
-*{
-    box-sizing: border-box;
-    /* border: 2px red solid */
+* {
+	box-sizing: border-box;
+	/* border: 2px red solid */
 }
 
 /* fonts */
 @font-face {
-  font-family: "garden-header";
-  src: url("https://files.catbox.moe/sgp52o.ttf") format("truetype");
+	font-family: "garden-header";
+	src: url("https://files.catbox.moe/sgp52o.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "garden-body";
-  src: url("LT\ Diploma.otf") format("opentype");
+	font-family: "garden-body";
+	src: url("LT\ Diploma.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "jazz-header";
-  src: url("Cerotta\ Personal\ Use\ Only.ttf") format("truetype");
+	font-family: "jazz-header";
+	src: url("Cerotta\ Personal\ Use\ Only.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "jazz-body";
-  src: url("https://files.catbox.moe/x219jn.ttf") format("truetype");
+	font-family: "jazz-body";
+	src: url("https://files.catbox.moe/x219jn.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "period-header";
-  src: url("https://files.catbox.moe/k2w9fj.otf") format("truetype");
+	font-family: "period-header";
+	src: url("https://files.catbox.moe/k2w9fj.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "period-body";
-  src: url("https://files.catbox.moe/ioh9y7.ttf") format("truetype");
+	font-family: "period-body";
+	src: url("https://files.catbox.moe/ioh9y7.ttf") format("truetype");
 }
 
 /* dropdown menu */
- /* Dropdown Button */
+/* Dropdown Button */
 .dropbtn {
-  background-color: #939393;
-  color: white;
-  padding: 7px;
-  border: none;
-  cursor: pointer;
-  margin: 5px;
-  border-radius: 10px;
+	background-color: #939393;
+	color: white;
+	padding: 7px;
+	border: none;
+	cursor: pointer;
+	margin: 5px;
+	border-radius: 10px;
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #c8c8c8;
-  font-weight: bold;
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #c8c8c8;
+	font-weight: bold;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #363636;
-  min-width: 160px;
-  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin: 2px 10px;
-  text-align: center
+	display: none;
+	position: absolute;
+	background-color: #363636;
+	min-width: 160px;
+	box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	margin: 2px 10px;
+	text-align: center;
 }
 
 /* Links inside the dropdown */
-.dropdown-content button{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: inline-block;
-  width: 95%;
-  margin: 2px
+.dropdown-content button {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: inline-block;
+	width: 95%;
+	margin: 2px;
+}
+
+.unavailable{
+	background-color: #616161;
+	display: inline-block;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 3px;
+	width: 95%;
+	font-size: .75em;
+	padding: 3px;
+}
+
+.dropdown-content button.active {
+	background-image: linear-gradient(rgb(178, 178, 178), rgb(133, 133, 133));
+	color: white;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content button:hover {
+	background-image: linear-gradient(rgb(209, 209, 209), rgb(177, 177, 177));
+}
+
+.unavailable button:hover{
+	background-image: linear-gradient(#5a5a5a, #5a5a5a)
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;} 
-
-body{
-    background-color: rgb(255, 251, 247);
-    margin: 0
+.show {
+	display: block;
 }
 
-.banner{
-    position: sticky;
-    background-color: rgb(207, 37, 65);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(236, 236, 229);
-    margin-bottom: 10px;
-    padding: 5px;
+body {
+	background-color: rgb(255, 251, 247);
+	margin: 0;
 }
 
-.container{
-    padding: 100px
+.banner {
+	position: sticky;
+	background-color: rgb(207, 37, 65);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: rgb(236, 236, 229);
+	margin-bottom: 10px;
+	padding: 5px;
 }
 
-.profile{
-    display: flex;
-    width: 70%;
-    gap: 40px;
-    align-self: center;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 2px;
-    border: solid 2px rgb(19, 157, 208);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.container {
+	padding: 100px;
 }
 
-.profile h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+.profile {
+	display: flex;
+	width: 70%;
+	gap: 40px;
+	align-self: center;
+	margin: auto;
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 2px;
+	border: solid 2px rgb(19, 157, 208);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.pfp img{
-    border-radius: 50%;
-    max-height: 200px;
-    border: 1px solid gray
+.profile h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.pfp p{
-    text-align: center;
-    color: gray;
+.pfp img {
+	border-radius: 50%;
+	max-height: 200px;
+	border: 1px solid gray;
+}
+
+.pfp p {
+	text-align: center;
+	color: gray;
 }
 
 /* garden style */
 
-body.garden{
-    background-image: url(garden-bg.png);
+body.garden {
+	background-image: url(garden-bg.png);
 }
 
-.profile.garden{
-        font-family: 'garden-body', fantasy;
-        background-color: rgb(255, 236, 221);
-        border: dashed 3px rgb(215, 92, 137);
-        color: rgb(165, 64, 101)
+.profile.garden {
+	font-family: "garden-body", fantasy;
+	background-color: rgb(255, 236, 221);
+	border: dashed 3px rgb(215, 92, 137);
+	color: rgb(165, 64, 101);
 }
 
-.profile.garden h2{
-    font-family: 'garden-header', fantasy;
-    color: rgb(241, 74, 116)
+.profile.garden h2 {
+	font-family: "garden-header", fantasy;
+	color: rgb(241, 74, 116);
 }
 
-.pfp.garden img{
-    border: dashed rgb(242, 117, 138) 2px;
+.profile.garden a{
+    color: rgb(157, 142, 204)
 }
 
-.pfp.garden p{
-    color: rgb(242, 119, 152)
+.pfp.garden img {
+	border: dashed rgb(242, 117, 138) 2px;
+}
+
+.pfp.garden p {
+	color: rgb(242, 119, 152);
 }
 
 /* jazz style */
 
-body.jazz{
-    background-image: linear-gradient(rgb(13, 43, 117), rgb(19, 8, 58));
-    height: 100vh
+body.jazz {
+	background-image: linear-gradient(rgb(13, 43, 117), rgb(19, 8, 58));
+	height: 100vh;
 }
 
-.profile.jazz{
-    font-family: 'jazz-body', serif;
-    background-image: linear-gradient(rgb(33, 24, 73), rgb(16, 70, 186));
-    border: solid rgb(54, 109, 220) 7px;
-    color: rgb(255, 224, 151)
+.profile.jazz {
+	font-family: "jazz-body", serif;
+	background-image: linear-gradient(rgb(33, 24, 73), rgb(16, 70, 186));
+	border: solid rgb(54, 109, 220) 7px;
+	color: rgb(255, 224, 151);
 }
 
-.profile.jazz h2{
-    font-family: 'jazz-header', serif;
-    color: rgb(255, 183, 0)
+.profile.jazz h2 {
+	font-family: "jazz-header", serif;
+	color: rgb(255, 183, 0);
 }
 
-.pfp.jazz img{
-    border: rgb(230, 149, 19) 3px solid
+.profile.jazz a{
+    color: rgb(255, 166, 33)
 }
 
-.pfp.jazz p{
-    color: rgb(114, 165, 248)
+.pfp.jazz img {
+	border: rgb(230, 149, 19) 3px solid;
+}
+
+.pfp.jazz p {
+	color: rgb(114, 165, 248);
 }
 
 /* period style */
 
-body.metal{
-    background-image: url(period-bg.jpg);
+body.metal {
+	background-image: url(period-bg.jpg);
 }
 
-.profile.metal{
-    font-family: 'period-body';
-    background-color: black;
-    border: double rgb(154, 9, 9) 10px;
-    border-radius: 0;
-    color: rgb(222, 219, 219)
+.profile.metal {
+	font-family: "period-body";
+	background-color: black;
+	border: double rgb(154, 9, 9) 10px;
+	border-radius: 0;
+	color: rgb(222, 219, 219);
 }
 
-.profile.metal h2{
-    font-family: 'period-header', serif;
-    color: red
+.profile.metal h2 {
+	font-family: "period-header", serif;
+	color: red;
 }
 
-.pfp.metal img{
-    box-shadow: 0px 0px 25px red;
+.pfp.metal img {
+	box-shadow: 0px 0px 25px red;
 }
 
-.pfp.metal p{
-    color: rgb(197, 86, 86)
+.pfp.metal p {
+	color: rgb(197, 86, 86);
 }
