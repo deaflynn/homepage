@@ -16,8 +16,13 @@ img{
   src: url("https://files.catbox.moe/udfjj8.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "journal-font";
+  src: url("https://file.garden/ZpLcdh6W1EDmvJ3N/random/ari-w9500.ttf") format("truetype");
+}
+
 body{
-    background-color: rgb(43, 3, 63);
+    background-color: rgb(24, 5, 56);
     text-align: center
 }
 
@@ -30,11 +35,31 @@ h1{
     width: 70%;
     margin: auto;
     border-radius: 3px;
+    margin-bottom: 30px;
 }
 
-p{
+p, summary, ul{
     font-family: "body-font", sans-serif, monospace;
-    color: rgb(235, 182, 235);
+    color: rgb(230, 132, 230);
+}
+
+details{
+    line-height: 30px;
+}
+
+::marker{
+    color: rgb(230, 138, 19);
+}
+
+ul{
+    max-width: 80%;
+    margin: auto;
+    font-family: "journal-font", sans-serif;
+}
+
+li{
+    color: rgb(193, 62, 226);
+    list-style-position: inside;
 }
 
 .page-button{
